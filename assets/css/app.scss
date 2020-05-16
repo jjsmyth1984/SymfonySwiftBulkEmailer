@@ -1,0 +1,212 @@
+// Imports
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+// Vars and Reset
+$theme: #1170ff;
+$dark-text: #5f6982;
+
+// Upload
+$theme-upload: #52a53e;
+
+html,
+body,
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  padding: 2rem;
+  background: #f8f8f8;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  color: $theme;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: $dark-text;
+}
+
+.block {
+  width: 100%;
+  display: block;
+  float: left;
+  padding: 0rem 0rem 0.25rem 0rem;
+}
+
+// Upload Demo
+.uploader {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+
+  label {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 7px;
+    border: 3px solid #eee;
+    transition: all 0.2s ease;
+    user-select: none;
+  }
+
+  #start {
+    float: left;
+    clear: both;
+    width: 100%;
+
+    &.hidden {
+      display: none;
+    }
+
+    i.fa {
+      font-size: 50px;
+      margin-bottom: 1rem;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  #response {
+    float: left;
+    clear: both;
+    width: 100%;
+
+    &.hidden {
+      display: none;
+    }
+
+    #messages {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  #file-image {
+    display: inline;
+    margin: 0 auto 0.5rem auto;
+    width: auto;
+    height: auto;
+    max-width: 180px;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  #notimage {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  progress,
+  .progress {
+    // appearance: none;
+    display: inline;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 180px;
+    height: 8px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #eee;
+    overflow: hidden;
+  }
+
+  .progress[value]::-webkit-progress-bar {
+    border-radius: 4px;
+    background-color: #eee;
+  }
+
+  .progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, darken($theme, 8%) 0%, $theme 50%);
+    border-radius: 4px;
+  }
+
+  .progress[value]::-moz-progress-bar {
+    background: linear-gradient(to right, darken($theme, 8%) 0%, $theme 50%);
+    border-radius: 4px;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  div {
+    margin: 0 0 0.5rem 0;
+    color: $dark-text;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+    clear: both;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: initial;
+    border: none;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0 1rem;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    background: $theme;
+    border-color: $theme;
+    cursor: pointer;
+  }
+
+  .btn-upload {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
+    clear: both;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: initial;
+    border: none;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0 1rem;
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+    box-sizing: border-box;
+    background: $theme-upload;
+    border-color: $theme-upload;
+    cursor: pointer;
+  }
+
+}

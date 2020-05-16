@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BulkEmailController!{% endblock %}
+
+{% block body %}
+    <h2>Symfony Swift Bulk Emailer</h2>
+    <p class="lead">No Plugins <b>Just Javascript</b></p>
+    <!-- Upload  -->
+    <form id="file-upload-form" class="uploader" action="/" method="post" enctype="multipart/form-data">
+        <input id="file-upload" type="file" name="fileUpload" accept="csv/*" />
+        <label for="file-upload" id="file-drag" class="uploader-function">
+            <div id="start">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <div>Select or drag .csv file here</div>
+                <div id="notimage" class="hidden">Please select a .csv</div>
+                <span id="file-name" class="block"></span>
+                <span id="file-size" class="block"></span>
+                <span id="file-type" class="block"></span>
+                <span id="file-upload-btn" class="btn btn-primary uploader-function">Select a file</span>
+                <button type="submit" id="file-upload-btn" class="btn-upload btn-secondary" name="submit">Upload file</button>
+            </div>
+            <div id="response" class="hidden">
+                <div id="messages"></div>
+                <progress class="progress" id="file-progress" value="0">
+                    <span>0</span>%
+                </progress>
+            </div>
+        </label>
+    </form>
+{% endblock %}
