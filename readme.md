@@ -1,3 +1,11 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8N47UXGWGZUY4)
+# Symfony 5 Swift Emailer
 
-# Free Symfony 5, Swift Emailer
+Symfony 5 Dependencies
+- composer require symfony/webpack-encore-bundle
+- composer require "swiftmailer/swiftmailer:^6.0"
+- yarn add sass-loader@^8.0.0 node-sass --dev
+
+Email Provider Connection
+- .env file
+
+
